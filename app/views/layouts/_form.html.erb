@@ -1,0 +1,46 @@
+<div class="row">
+<div class="container col-md-6 col-md-offset-3" id="form" >
+    
+    
+    <%= form_for @exercise  do |f| %> 
+    
+    <%= f.label :sentence, "Provide the sentence" %> <br/>
+    <%= f.text_field :sentence %> <br/><br/>
+    
+    <%= f.label :answer, "Provide the answer"%> <br/>
+    <%= f.text_field :answer %><br/><br/>
+    
+    <%= f.label :transform, "How do you want to start the exercise?" %> <br/>
+    <%= f.text_field :transform %> <br/><br/>
+    
+    <%= f.label :word_prompt, "Use this word in transformation" %> <br/>
+    <%= f.text_field :word_prompt %> <br/><br/>
+    
+
+    <%= radio_button_tag(:status, 0) %><br/>
+    <%= label_tag(:status, "passive") %><br/>
+    
+    <%= radio_button_tag(:status, 1) %><br/>
+    <%= label_tag(:status, "subjunctive") %><br/>
+    
+    <%= radio_button_tag(:status, 2) %><br/>
+    <%= label_tag(:status, "tense") %><br/>
+    
+    <%= radio_button_tag(:status, 3) %><br/>
+    <%= label_tag(:status, "conditionals") %><br/>
+    
+    <%= radio_button_tag(:status, 4) %><br/>
+    <%= label_tag(:status, "reported") %><br/>
+
+    <%= radio_button_tag(:status, 5) %> <br/>
+    <%= label_tag(:status, "modals") %> <br/>
+    
+    <%= radio_button_tag(:status, 6) %><br/>
+    <%= label_tag(:status, "gerunds") %><br/>
+    
+    <br/>
+    <%= f.submit %> 
+    
+    <% end %> 
+</div> 
+</div>

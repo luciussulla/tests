@@ -1,0 +1,37 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.jumbotron {
+    background: url(notes.jpg) no-repeat top center;
+}
+
+.jumbotron .container h1, .jumbotron .container p {
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 3px 10px 3px 10px;
+    
+}
+
+body {
+  padding-top: 37px;
+}
+
+#form {
+    padding-top: 40px;
+}
+
+section h3 {
+    padding-top: 35px;
+}
+
+.container section h2 {
+    padding-bottom: 25px;
+}
+
+footer .all {
+    padding-top: 30px !important;
+    width: 100% !important;
+    text-align: center;
+}

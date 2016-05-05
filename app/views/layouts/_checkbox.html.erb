@@ -1,0 +1,32 @@
+
+        <%= form_tag({controller: "exercises", action: "test"}, method: "post") do %> 
+        
+            <%= check_box_tag(:tenses) %><br/>
+            <%= label_tag(:tenses, "Tenses") %><br/>
+            
+            <%= check_box_tag(:passives) %><br/>
+            <%= label_tag(:passives, "Passives") %><br/>
+            
+            <%= check_box_tag(:conditionals) %><br/>
+            <%= label_tag(:conditionals, "Conditionals") %><br/>
+            
+            <%= check_box_tag(:reported) %> <br/>
+            <%= label_tag(:reported, "Reported Speech and Indirect Questions")%><br/>
+        
+            <%= check_box_tag(:subjunctives) %><br/>
+            <%= label_tag(:subjunctives, "Subjunctive")%> <br/>
+            
+            <%= check_box_tag(:modals) %><br/>
+            <%= label_tag(:modals, "Modals")%> <br/>
+            
+            <%= check_box_tag(:gerunds) %><br/>
+            <%= label_tag(:gerunds, "Gerunds")%> <br/>
+            
+            <br/>
+            <%= label_tag(:quantity, "How many exerises you want in your test? Max is 10") %> <br/><br/>
+            <%= number_field_tag 'quantity', nil, within: 1...10 %><br/><br/>
+        
+            <%= submit_tag("submit", class: "btn btn-lg btn-primary") %> <br/>
+        
+        <% end %>
+ 

@@ -1,0 +1,102 @@
+<!-- jumbotron --> 
+
+<div class= "jumbotron text-center">
+    <div class="container">
+        <h1>Test yourself</h1>
+        <p>This application allows to you test your advanced grammar skills... and do lot more!
+        </p>
+       
+        <div class="btn-group">
+            <a href="#features" class="btn btn-lg btn-warning">Learn More</a>
+            <a href="#test" class="btn btn-lg btn-default">Generate Test!</a>
+            <a href="#" class="btn btn-lg btn-warning">Read theory</a>
+        </div>
+    </div><!-- end container --> 
+</div><!-- end jumbotron --> 
+
+<div class="container">
+    <section>
+        <div class="page-header" id="feedback">
+            <h2>App' features<small> Read about what the app has 
+            to offer now and will offer in the future!</small></h2>
+        </div>
+    </section>
+</div>
+
+<div class="row">
+    <div class="col-md-4 text-center">
+        <blockquote>
+            <span class="glyphicon glyphicon-pencil text-center"></span>
+            <p>This applicaton is available both on desktops and on 
+                your mobile, which helps you study not only at home but 
+                wherever you are.
+            </p>
+            <footer>Study in the tram, shop, train, wherever..</footer>
+        </blockquote>
+    </div>
+    <div class="col-md-4 text-center">
+        <blockquote>
+            <span class="glyphicon glyphicon-file"></span>
+            <p>We are working on a feature that will allow you to print pdf 
+                tests with answers on the desktop versions of this app.
+            </p>
+            <footer>Print your test in a pdf version</footer>
+        </blockquote>
+    </div>
+    <div class="col-md-4 text-center">
+        <blockquote>
+          <span class="glyphicon glyphicon-ok text-center"></span>
+            <p>The "check-answer" option allows you to check the answer 
+                right away!
+            </p>
+            <footer>Immediately check your answers!</footer>
+        </blockquote>
+    </div>
+</div>
+
+<!-- Call to action -->
+<section id="test_section">
+    <div class="well" id="test">
+        <div class="container text-center">
+            <h3>Generate your test!</h3>
+            <p>The form allows you to select which topics you want to be 
+            included in the test, just tick the checkboxes!</p
+            
+            <div class="row">
+                <div class="col col-lg-6 col-lg-offset-3">
+                    <%= render('layouts/checkbox') %>
+                    <hr>
+               </div><!-- end col -->
+            </div><!-- end row -->
+            
+        </div><!-- end conntainer -->
+    </div><!-- end well -->
+</section>
+
+<div class="container">
+    <section>
+        <div class="page-header" id="features">
+            <h2>Features<small> This app has some cool features and will have more 
+            in the near future - stay tuned!</small></h2>    
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Teach yourself grammar by doing exercises!</h3>
+                <p>First feature that has already been implemented is the 
+                possibility to select exercises from four gramar areas: tenses, 
+                passives, conditionals, reported speech and subjunctive. The list is not exhausted 
+                so we are working on bringing you more exercises that will help 
+                you learn more. We are also working on a theory section that 
+                will provide you with the necessary theoretical support.</p>
+            </div>
+            
+            <div class="col-md-8 col-md-offset-0">
+              <%= image_tag("user_res.jpg")%>  
+              <%= image_tag("imac_res.jpg")%> 
+              <%= image_tag("smartphone_res.jpg")%> 
+            </div>
+        </div><!-- end row --> 
+    </section>
+</div><!-- end container -->
+
+
