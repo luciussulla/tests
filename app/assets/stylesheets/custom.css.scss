@@ -6,16 +6,23 @@
     background: url(notes.jpg) no-repeat top center;
 }
 
-.jumbotron .container h1, .jumbotron .container p {
+.jumbotron .container h1 {
     background-color: white;
     display: inline-block;
-    text-align: center;
+    //text-align: center;
     padding: 3px 10px 3px 10px;
     
 }
 
+.jumbotron .container p {
+    background-color: white;
+    display: inline-block;
+    //text-align: center;
+    padding: 3px 10px 3px 10px;
+}
+
 body {
-  padding-top: 37px;
+ padding-top: 37px;
 }
 
 #form {
@@ -28,6 +35,10 @@ section h3 {
 
 .container section h2 {
     padding-bottom: 25px;
+}
+
+section#test_section {
+    font-size: 20px;
 }
 
 footer .all {
