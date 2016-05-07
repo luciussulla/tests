@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container", id="test">
 
-    <div class="row">
-        <div class="col-xs-6 col-xs-offset-3">
+   
+        <div class="col-xs-10 col-xs-offset-1">
             
             <h1>Complete the test</h1>
             <p>Your test consists of <%= pluralize @quantity, 'question' %><br/>
@@ -9,7 +9,7 @@
             <br/>
             <% @selected_array.each do |e| %> 
             <div class="exercise">
-                <%= e.sentence %><br/>
+                <p><%= e.sentence %></p>
                 <% if e.word_prompt %>
                 <b><%= e.word_prompt %></b><br/>
                 <% end %>
@@ -29,7 +29,7 @@
             <% end %>   
         </div><!-- col md 8 -->
             
-    </div><!-- end row -->
+    
 
     <div>
         <% if @show_warning_message == true %>
