@@ -1,20 +1,28 @@
 <div class="container", id="test">
-
-   
+    
         <div class="col-xs-10 col-xs-offset-1">
-            
-            <h1>Complete the test</h1>
-            <p>Your test consists of <%= pluralize @quantity, 'question' %><br/>
-            </p>
-            <br/>
+         
+            <div class="panel panel-default">
+                
+              <div class="panel-heading">
+                <h1>Complete the test</h1>
+              </div>
+              <div class="panel-body">
+                  <p>Your test consists of <%= pluralize @quantity, 'question' %><br/></p>
+              </div>      
+             </div><!-- end panel --><br/>
+        
             <% @selected_array.each do |e| %> 
+            
             <div class="exercise">
                 <p><%= e.sentence %></p>
-                <% if e.word_prompt %>
+                <% unless e.word_prompt.blank? %>
                 <b><%= e.word_prompt %></b><br/>
                 <% end %>
-                <% if e.transform %>
+                <% unless e.transform.empty? %>
                   <%= e.transform %><br/>
+                  
+                  
                 <% end %>   
                 
                 <button type="button" class="btn btn-info" 
