@@ -18,7 +18,7 @@
                 <% unless e.word_prompt.blank? %>
                 <b><%= e.word_prompt %></b><br/>
                 <% end %>
-                <% unless e.transform.empty? %>
+                <% unless e.transform.blank? %>
                   <%= e.transform %><br/>
                 <% end %>   
                 
@@ -34,10 +34,8 @@
             <% end %>   
         </div><!-- col md 8 -->
             
-    
-
     <div>
-        <% if @show_warning_message == true %>
+        <% if @show_warning_message %>
         <%= @msg %>
         <% end %> 
     </div>

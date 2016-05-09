@@ -54,7 +54,6 @@ class ExercisesController < ApplicationController
       @array_modals = Exercise.modals
       @array_gerunds = Exercise.gerunds
       
-      
       @ten_num = params[:tenses].inspect 
       @pas_num = params[:passives].inspect
       @sub_num = params[:subjunctives].inspect
