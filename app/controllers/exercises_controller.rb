@@ -40,9 +40,10 @@ class ExercisesController < ApplicationController
          redirect_to exercise_path(@exercise)
     end 
 
-    def test
+    def test 
     
       @the_last_exercise = Exercise.last 
+      
       
       @quantity = params[:quantity].to_i 
    
