@@ -3,9 +3,8 @@
         <div class="col-xs-10 col-xs-offset-1">
          
             <div class="panel panel-default">
-                
               <div class="panel-heading">
-                <h1>Complete the test</h1>
+                <h2>Complete the test</h2>
               </div>
               <div class="panel-body">
                   <p>Your test consists of <%= pluralize @quantity, 'question' %><br/></p>
@@ -21,8 +20,6 @@
                 <% end %>
                 <% unless e.transform.empty? %>
                   <%= e.transform %><br/>
-                  
-                  
                 <% end %>   
                 
                 <button type="button" class="btn btn-info" 
